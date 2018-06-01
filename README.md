@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# Example Angular-CLI commands:
+`ng g m shared/material --flat --dry-run`
+```
+CREATE src/app/shared/material.module.spec.ts (291 bytes)
+CREATE src/app/shared/material.module.ts (192 bytes)
+```
+
+`ng s -o` Runs the server and opens up the browser.
