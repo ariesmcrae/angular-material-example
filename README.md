@@ -30,12 +30,27 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #### Create new project
 `ng new angular-material-example --style=scss`
 
-#### Create new component
+#### Create new module
 `ng g m shared/material --flat --dry-run`
 ```
 CREATE src/app/shared/material.module.spec.ts (291 bytes)
 CREATE src/app/shared/material.module.ts (192 bytes)
 ```
-
 #### Run server and open app in browser
-`ng s -o` Runs the server and opens up the browser.
+`ng s -o` 
+Runs the server and opens up the browser.
+
+#### Create another module with routing
+`ng g m demo --routing --dry-run`
+```
+CREATE src/app/demo/demo-routing.module.ts (247 bytes)
+CREATE src/app/demo/demo.module.spec.ts (259 bytes)
+CREATE src/app/demo/demo.module.ts (271 bytes)
+```
+
+#### Generate a component
+`ng g c demo/buttons --no-spec --inline-style --inline-template --dry-run`
+```
+CREATE src/app/demo/buttons/buttons.component.ts (259 bytes)
+UPDATE src/app/demo/demo.module.ts (351 bytes)
+```
